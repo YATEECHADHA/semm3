@@ -1,3 +1,5 @@
+Objective :
+Implement queue using circular array representation.
 #include<iostream>
 using namespace std;
 const int size = 5;
