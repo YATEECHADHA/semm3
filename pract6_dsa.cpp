@@ -1,3 +1,5 @@
+Objective :
+Implement a stack using array representation.
 #include<iostream>
 using namespace std;
 const int size = 30;
