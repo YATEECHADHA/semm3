@@ -1,3 +1,5 @@
+Objective :
+Implement Stack using linked representation.
 #include<iostream>
 using namespace std;
 class Stack
