@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style3.css">
+
+</head>
+<body>
+    <div class="container">
+    <!--making a payment form-->
+    <form action="">
+        <h1>Payment Form</h1>
+        <hr>
+        <p>Required Fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <!--We need the name wala attribute as when we write the input the value of the name will be added in the server database-->
+        <p>Name: * <input type="text" name="Name" aria-required=""></p>
+        <!--input type="radio is to activate the radio button"-->
+        <!--name =Gender isliye coz woh gender wale attriute mein jayega in database-->
+        <fieldset>
+            <legend>Gender</legend>
+            <!--legend will be used as the box mein notify karne ke liye ki what that box is referring to-->
+            <p>
+                <!--Name is written as gender attribute as they both are reffrening to the same thing-->
+                <!--field set attribute will give you a synchronised way to represent the form within boxses-->
+                Male <input type="radio" name="gender" id="male">
+                Female<input type="radio" name="gender" id="female">
+            </p>
+        </fieldset>
+        <p>
+            <!--Text area is area that is needed larger to fill more details-->
+            <!--Using the br tag to break the line-->
+            Address: <textarea name="address" id="address" cols="50" rows="5"></textarea><br>
+            <!--Note text area needs to be closed-->
+            <!--Now how to check whetther the inputed email is correct or not there is an inbuilt function so use the input tag of type email.. it would check the .com is there or not-->
+            Email: <input type="email" name="email" id="email" required><br>
+            Pincode: <input type="number" name ="pincode" id="pincode" required>
+        </p>
+        <h2>Payment Information</h2>
+        <p>Card Type: 
+            <select name="card type" id="card_type">
+                <option value="">--select a card Type--</option>
+                <!--The value that you write on the left side i.e after = is the value taht goes into the server and the value u write on th right side is the valu ethat will be displayed on the browser-->
+                <option value="Visa">visa</option>
+                <option value="Rupayy">Rupay</option>
+                <option value="Master card">Master card</option>
+            </select>
+        </p>
+        <p>
+            card Number <input type="number" name="card_number" id="card_number ">
+        </p>
+        <p>
+            Expiration Date: <input type="date" name="exp_date" id="exp_date">
+        </p>
+        <p>
+            <!--As cvv is an important thing and needs to be ihdden we use the input tyoe password-->
+            CVV: <input type="password" name="cvv_password" id="cvv_password">
+            <hr>
+            <input type="submit" value="Pay Now">
+        </p>
+    </div>
+    </form>
+<!--Structure of a web page-->
+
